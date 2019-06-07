@@ -2,50 +2,28 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <title>Poor Man's SSO</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Poor Man's Launchpad</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fafafa">
 
-  <!-- Place favicon.ico in the root directory -->
-
-  <meta name="theme-color" content="#fafafa">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <p>Poor man's SSO.</p>
-  
-  
-  <form autocomplete="off">
-                    <div class="field-wrapper">
-                        <div id="siteLabel"><div class="label">Account number</div></div>
-                        <div id="siteNumberFieldContainer" class="field"><input type="text" class="input-field permutation-login" value="" size="25" tabindex="1" name="lpSite" id="siteNumber"></div>
-                    </div>
-                    <div class="field-wrapper">
-                        <div id="userLabel"><div class="label">Login name</div></div>
-                        <div id="userIdFieldContainer" class="field"><input type="text" class="input-field permutation-login" value="" size="25" tabindex="2" name="lpUser" id="userName"></div>
-                    </div>
-                    <div class="field-wrapper">
-                        <div id="passwordLabel"><div class="label">Password</div></div>
-                        <div id="passwordFieldContainer" class="field"><input type="password" class="input-field permutation-login" value="" size="25" tabindex="3" autocomplete="off" name="lpPass" id="sitePass"></div>
-                    </div>
-                    <div class="remember-me-forgot-password-wrapper">
-                        <div class="remember-me-checkbox">
-                            <div id="rememberMeCheckboxWrapper" class="checkbox-wrapper"><button id="checkbox" type="button" class="checkbox-btn" tabindex="4"></button></div>
-                        </div>
-                        <div id="rememberMeLabel" class="remember-me-container">
-                        <div class="remember-me">Remember me</div></div>
+    <p>Poor man's Launchpad.</p>
 
-                        <div id="rememberMeInfoContainer"></div>
-                        <div id="forgotPasswordWrapper" class="forgot-password">
-                        <a class="forgot-password-link link" tabindex="5">Forgot your password?</a></div>
-                    </div>
-                    <div class="button-wrapper">
-                        <div id="submitButtonWrapper" class="button"><input type="button" class="login-button primary" value="Sign in" tabindex="6" name="loginButton"></div>
-                    </div>
-   </form>
-                
 
+    <form action="#" name="sso">
+        <input type="text" placeholder="Account ID" value="" size="25" tabindex="1" name="account">
+        <input type="text" placeholder="Login Name" value="" size="25" tabindex="2" name="user">
+        <input type="password" placeholder="Password" value="" size="25" tabindex="1" name="pass">
+        <input type="submit" value="Show All Services">
+    </form>
+
+
+    <script type="text/javascript" src="sso.js"></script>
 </body>
 
 </html>
