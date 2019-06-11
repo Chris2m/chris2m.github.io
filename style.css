@@ -1,19 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
+
+:root {
+  --MRbg: #03002f;
+  --MRmenuBG: #f3f6ff;
+  --MRprimarybtn: #ab47bc;
+  --MRmaintxt: #666666;
+  --iconsidle: #888888;
+  --MRselctedblue: #5879da;
+  --MRicondisable: #dddddd;
+  --MRhover: #cccccc;
+  --MRdisableBG: #f2f2f2;
+  --MRprimarybtnhover: #9c1db1;
+  --MRsecondarybtn: #d8d8d8;
+  --MRsecondarybtnhover: #c5c5c5;
+  --MRqueueorange: #f5a623;
+  --MRidleblue: #4b91b9;
+  --MRclosedgrey: #b1b1b1;
+  --MRredoverdue: #dd1f27;
+  --MRgreenongoing: #98c002;
+  --MRprimarybtnpressed: #871999;
+  --MRsystemmessagesbtnhover: #f4f4f4;
+  --selectedwidget: #32c6f4;
+  --MRtooltipBG: #b8bfd4;
+  --MRmaintitle: #333333;
+  --MRtooltitxt: #000000;
+}
+
+
+html {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 24px;
+  color: var(--MRsystemmessagesbtnhover);
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
 body {
-  background: #e2e1e0;
+  background: var(--MRbg);
+  background-size:cover;
+  background-image: url('bg.png');
   text-align: center;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Roboto Slab', Arial, sans-serif;
+}
+
+
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: medium none;
+  appearance: none;
+  padding: 8px;
+}
+
+
 .card {
-  background: #fff;
+  background: var(--MRselctedblue);
   border-radius: 2px;
   display: inline-block;
   height: 200px;
-  margin: 1rem;
+  margin: 14px;
   position: relative;
   width: 300px;
   cursor: pointer;
+  padding: 12 px;
+}
+
+
+.card h2 {
+  font-size: 20px;
   text-transform: capitalize;
 }
+
+.card p {
+  font-size: 16px;
+} 
 
 .card-1 {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);

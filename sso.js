@@ -25,22 +25,22 @@ const entries = {
     },
     "leBackofficeInt": {
         name: "Houston",
-        description: "Mission Control for LiveEngage with lots of modules for customizing account configuration.",
+        description: "Mission Control for LiveEngage with lots of modules for customizing account configuration and features.",
         type: "csds"
     },
     "mcs": {
         name: "MCS Toolkit",
-        description: "Meaningful Connector Score measures the sentiment conversations.",
+        description: "Meaningful Connector Score measures the sentiment conversations and changes outcome for the better.",
         type: "csds"
     },
     "rtDashboard": {
         name: "Real-time Dashboard",
-        description: "Gain real-time insights into your conversational operations.",
+        description: "Customer care professionals and admins can see their daily operational KPI metrics updated in real time.",
         type: "csds"
     },
     "routingBot": {
         name: "Bot Studio",
-        description: "Configure Routing Bots and Post Conversation Surveys",
+        description: "Configure Routing Bots and Post Conversation Surveys in a sleak UI outside of LiveEngage.",
         type: "csds"
     },
     "faasUI": {
