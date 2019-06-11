@@ -58,11 +58,11 @@ const entries = {
 const config = {
     csds: {},
     servicepath: "a/~~accountid~~/#,~~ssokey~~",
-    apiDomain: ENV.qa ? apiDomains.qa : apiDomains.prod
+    apiDomain: () => ENV.qa ? apiDomains.qa : apiDomains.prod
 };
 
 const urls = {
-    api: (account) => `https://${config.apiDomain}/csdr/account/${account}/service/baseURI.lpCsds?version=1.0`,
+    api: (account) => `https://${config.apiDomain()}/csdr/account/${account}/service/baseURI.lpCsds?version=1.0`,
     service: (account, domain, ssoKey) => `https://${domain}/a/${account}/#,${ssoKey}`
 };
 
