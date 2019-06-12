@@ -41,7 +41,7 @@ html {
 body {
   background: var(--MRbg);
   background-size:cover;
-  background-image: url('bg.png');
+  background-image: url('bg.jpg');
   text-align: center;
 }
 
